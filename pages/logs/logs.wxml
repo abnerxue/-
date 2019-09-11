@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input type="text" focus="{{inputShowed}}" data-lao="{{search}}" value="{{search}}" placeholder="请输入关键字" bindinput="sou" />
+      </view>
+    </view>
+    <view class='sousuo'>搜索</view>
+  </view>
+  <block wx:for="{{show_local}}" wx:for-index="index" wx:for-item="item">
+        <view class="posit" data-site="{{item.title}}" bindtap="li">{{item.title}}</view>
+      </block>

@@ -1,0 +1,12 @@
+<view class="contain">
+  <view class="img">
+      <image src="{{photoimg_src}}"></image>
+  </view>
+  <view class="character">
+      {{character}}
+  </view>
+  <audio src="{{video_src}}" id="myAudiotwo" controls loop style="display:none;"></audio>
+  <view class="local_png">
+    <image bindtap="startvideo" src="{{image_src}}"></image>
+  </view>
+</view>

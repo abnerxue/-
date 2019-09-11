@@ -1,0 +1,244 @@
+page{
+  height: 100%;
+  overflow-y:hidden; 
+}
+.view{
+  width: 100%;
+  height: 90%;
+  display: block;
+  /* z-index: 1; */
+}
+.search{
+  position: fixed;
+  height: 100%;
+  width: 7%;
+  margin-left: 3%;
+}
+.search_image{
+  width: 100%;
+  height: 100%；
+}
+.head{
+  margin-left:10%; 
+  width: 90%;
+  white-space:nowrap;
+  /* position: absolute; */
+  height: 100%;
+  /* float: left; */
+}
+.htop{
+  width: 100%;
+  height: 5%;
+  /* display: none; */
+  z-index: 5;
+}
+.head_left{
+  width: 10%;
+  height: 5%;
+  float: left;
+}
+.la{
+  position: absolute;
+  float: right;
+  margin-top: -9%;
+  margin-left: 93%;
+  width: 8%;
+  height: 100%;
+}
+.la>view{
+  width: 25%;
+  float: left;
+  height: 9px;
+  /* background:springgreen; */
+  margin: 2%;
+  border: 1px rgba(0,0,0,1) solid;
+}
+map{
+  width:100%;
+  height: 90%;
+}
+/* image{
+  width: 100%;
+  opacity: 0.4;
+} */
+.headtitle{
+  font-size:15px;
+  font-style:"宋体";
+  margin:2px 12px 0 12px; 
+  padding: 0 15px 0 15px;
+  /* border: 1px aliceblue solid; */
+}
+.butt{
+  border-radius-left:50%;
+  background-color:yellow;
+  color: black;
+  border-radius:15px; 
+  border: 1px rgb(172, 228, 17) solid;
+}
+
+.model{
+  z-index: 2;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  background: rgba(255,255,255,0.5);
+}
+.mirror{
+  width: 100%;
+  height: 100%;
+}
+.mark{
+  width: 100%;
+  position: absolute;
+  /* margin-top: -100%; */
+  /* opacity: 0.8; */
+  /* display: none; */
+  height: 90%;
+}
+.mark cover-view{
+  width: 17%;
+  height: 3%;
+  position: absolute;
+  background:yellow;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+}
+.mark cover-view:nth-child(1){
+  margin-top: 110%;
+}
+.mark cover-view:nth-child(2){
+  margin-top: 100%;
+  margin-left: 25%;
+}
+.mark cover-view:nth-child(3){
+  margin-top: 21%;
+  margin-left: 50%;
+}
+.mark cover-view:nth-child(4){
+  margin-top: 60%;
+  margin-left: 21%;
+}
+.mark cover-view:nth-child(5){
+  margin-top: 95%;
+  margin-left: 50%;
+}
+.mark cover-view:nth-child(6){
+  margin-top: 63%;
+  margin-left: 58%;
+}
+.mark cover-view:nth-child(7){
+  margin-top: 77%;
+  margin-left: 28%;
+}
+.mark cover-view:nth-child(8){
+  margin-top: 105%;
+  margin-left: 12%;
+}
+.mark cover-view:nth-child(9){
+  margin-top: 115%;
+  margin-left: 14%;
+}
+.mark cover-view:nth-child(10){
+  margin-top: 91%;
+  margin-left: 50%;
+}
+.mark cover-view:nth-child(11){
+  margin-top: 98%;
+  margin-left: 50%;
+}
+.mark cover-view:nth-child(12){
+  margin-top: 21%;
+  margin-left: 50%;
+}
+.mark cover-view:nth-child(13){
+  margin-top: 98%;
+  margin-left: 38%;
+}
+.mark cover-view:nth-child(14){
+  margin-top: 61%;
+  margin-left: 39%;
+}
+.mark cover-view:nth-child(15){
+  margin-top: 115%;
+  margin-left: 14%;
+}
+.mark cover-view:nth-child(16){
+  margin-top: 29%;
+  margin-left: 65%;
+}
+.mark cover-view:nth-child(17){
+  margin-top: 23%;
+  margin-left: 47%;
+}
+.mark cover-view:nth-child(18){
+  margin-top: 63%;
+  margin-left: 80%;
+}
+.mark cover-view:nth-child(19){
+  margin-top: 110%;
+  margin-left: 14%;
+}
+.mark cover-view:nth-child(20){
+  margin-top: 92%;
+  margin-left: 21%;
+}
+.mark cover-view:nth-child(21){
+  margin-top: 47%;
+  margin-left: 45%;
+}
+.mark cover-view:nth-child(22){
+  margin-top: 116%;
+  margin-left: 7%;
+}
+.mark cover-view:nth-child(23){
+  margin-top: 73%;
+  margin-left: 30%;
+}
+/* .hide{
+  display: none;
+}
+.vis{
+  display:block;
+  /* background: red; 
+} */
+.introduce{
+  width: 100%;
+  height: 20%;
+  margin-top: -12%;
+  position: absolute;
+}
+.contrain{
+  width: 70%;
+  height: 60%;
+  margin-left: 5%;
+  float: left;
+}
+.local_name_css{
+  width: 1000%;
+  font-weight:bold;
+  /* display: block; */
+  float: left;
+}
+.local_introduce_css{
+  font-size: 12px;
+  width: 100%;
+  float: left;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all; 
+}
+.local_introduce_video{
+  width: 20%;
+  float: right;
+  margin-right: 5%;
+  height: 50%;
+  /* position: absolute; */
+}
+.png_video_css{
+  width: 100%;
+  height: 100%;
+}

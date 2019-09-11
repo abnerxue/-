@@ -1,0 +1,89 @@
+<!-- <view class="bar">
+  <view class="head" bindtouchstart="start" bindtouchmove="move" bindtouchend="chend">
+    <!-- <a class="headtitle " wx:for="{{items}}"  wx:for-index="index" wx:for-item="item">
+    {{item.title}}
+    </a>
+  </view>
+</view> -->
+<!-- <i class="weui-icon-search"></i> -->
+<view class="htop">
+  <view class="search" bindtap="search">
+    <block>
+      <icon type="search" size="20"/>
+    </block>
+  </view>
+
+  <scroll-view
+      class="head"
+      scroll-x="true"
+      scroll-with-animation="true"
+      enable-back-to-top="true">
+    <view style="display:flex;flex-direction:row;">
+      <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+        <a class="headtitle {{index==num?'butt':''}}" bindtap="tap" data-smile="{{index}}">{{item.title}}</a>
+      </block>
+    </view>
+  </scroll-view>
+  <!-- <view class="la" >
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view> -->
+</view>
+<!-- <view class="unfold">
+  <block wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+        <a class="headtitle {{index==num?'butt':''}}" bindtap="tap" data-smile="{{index}}">{{item.title}}</a>
+  </block>
+</view> -->
+<!-- <view class="model">
+  <a>全部</a>
+</view> -->
+
+<view class='view' bindtap="yyy">
+  <map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" 
+  covers="{{covers}}" scale="{{scale}}" data-markers="{{markers}}"  show-location 
+  bindtap="ceshi">
+  <cover-view class="mirror">
+    <cover-view class="mark" bindtap="ccc">
+      <cover-view style="display:{{checked=='普光酒店'?'block':num==1?'block':'none'}}" data-address="普光酒店">普光酒店</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-思恩广场1.wav" bindtap="Localhost" style="display:{{checked=='思恩广场'?'block':num==1?'block':'none'}}" data-address="思恩广场">思恩广场</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-正法明大殿1.wav" bindtap="Localhost" style="display:{{checked=='正法明大殿'?'block':num==2?'block':'none'}}" data-address="正法明大殿">正法明大殿</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-光阴的故事_百岁阁1.wav" bindtap="Localhost" style="display:{{checked=='光阴的故事'?'block':num==2?'block':'none'}}" data-address="光阴的故事">光阴的故事</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-先祖庙堂1.wav" bindtap="Localhost" style="display:{{checked=='先祖庙堂'?'block':num==2?'block':'none'}}" data-address="先祖庙堂">先祖庙堂</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-蓼莪禅寺1.wav" bindtap="Localhost" style="display:{{checked=='蓼莪禅寺'?'block':num==2?'block':'none'}}" data-address="蓼莪禅寺">蓼莪禅寺</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-净心池1.wav" bindtap="Localhost" style="display:{{checked=='静心池'?'block':num==1?'block':'none'}}" data-address="静心池">静心池</cover-view>
+      <cover-view style="display:{{checked=='厕所'?'block':num==3?'block':'none'}}">厕所</cover-view>
+      <cover-view style="display:{{checked=='厕所'?'block':num==3?'block':'none'}}">厕所</cover-view>
+      <cover-view style="display:{{checked=='厕所'?'block':num==3?'block':'none'}}">厕所</cover-view>
+      <cover-view style="display:{{checked=='厕所'?'block':num==3?'block':'none'}}">厕所</cover-view>
+      <cover-view style="display:{{checked=='厕所'?'block':num==3?'block':'none'}}">厕所</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-孝子长廊1.wav" bindtap="Localhost" style="display:{{checked=='孝子长廊'?'block':num==4?'block':'none'}}" data-address="孝子长廊">孝子长廊</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-菩提大道1.wav" bindtap="Localhost" style="display:{{checked=='菩提大道'?'block':num==4?'block':'none'}}" data-address="菩提大道">菩提大道</cover-view>
+      <cover-view style="display:{{checked=='普光商街'?'block':num==4?'block':'none'}}" data-address="普光商街">普光商街</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-神道牌坊.wav" bindtap="Localhost" style="display:{{checked=='神道'?'block':num==4?'block':'none'}}" data-address="神道">神道</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-白塔.wav" bindtap="Localhost" style="display:{{checked=='白塔'?'block':num==1?'block':'none'}}" data-address="白塔">白塔</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-妙音宝塔.wav" bindtap="Localhost" style="display:{{checked=='妙音宝塔'?'block':num==1?'block':'none'}}" data-address="妙音宝塔">妙音宝塔</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-孝道之门1.wav" bindtap="Localhost" style="display:{{checked=='孝道之门'?'block':num==0?'block':'none'}}" data-address="孝道之门">孝道之门</cover-view>
+      <cover-view style="display:{{checked=='净澄湖'?'block':num==0?'block':'none'}}" data-address="净澄湖">净澄湖</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-如意潭.wav" bindtap="Localhost" style="display:{{checked=='如意谭'?'block':num==0?'block':'none'}}" data-address="如意谭">如意谭</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-蓼莪源.wav" bindtap="Localhost" style="display:{{checked=='蓼莪源'?'block':num==0?'block':'none'}}" data-address="蓼莪源">蓼莪源</cover-view>
+      <cover-view data-src="http://47.103.100.232:8085/daoyou/女-发愿石1.wav" bindtap="Localhost" style="display:{{checked=='发愿石'?'block':num==0?'block':'none'}}" data-address="发愿石">发愿石</cover-view>
+     </cover-view>
+    </cover-view>
+  </map>
+  <audio src="{{src}}" id="myAudio" controls loop style="display:none;"></audio>
+</view>
+<!-- <view style="float:left;">{{hand}}</view>
+<view style="width:100%; height:20%;">
+  <view style="width:30%;height:90%;background:red;float:left;" bindtap="reduce">-</view>
+  <view style="width:30%;height:90%; float:left;">{{scale}}</view>
+  <view style="width:30%;height:90%; background:red; float:left;" bindtap="add">+</view>
+</view> -->
+<view class="introduce">
+  <view class="contrain" bindtap="navi">
+    <view class="local_name_css">{{local_name}}</view>
+    <view class="local_introduce_css">{{local_introduce}}</view>
+  </view>
+  <view class="local_introduce_video"><image bindtap="video_button" class="png_video_css" src="{{png_video}}"></image></view>
+</view>
